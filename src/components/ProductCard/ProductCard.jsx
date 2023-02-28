@@ -1,7 +1,7 @@
-import { useState } from "react";
+
 import axios from "axios";
 import { AiFillDelete, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import CardTotal from "../CardTotal";
+
 
 const ProductCard = ({ item, getTutorials }) => {
   const { id, name, image, price, dampingRate, amount } = item;
@@ -23,7 +23,7 @@ const ProductCard = ({ item, getTutorials }) => {
   const putTask = async (op) => {
     let upData = {};
     try {
-      if (op == "+") {
+      if (op === "+") {
         upData = { ...item, amount: +amount + 1 };
       } else {
         upData = { ...item, amount: +amount - 1 };

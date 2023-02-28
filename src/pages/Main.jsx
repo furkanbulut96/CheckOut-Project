@@ -1,5 +1,4 @@
 import Button from "../components/Button";
-import Button2 from "../components/Button2";
 import AddProduct from "../components/AddProduct";
 import CardTotal from "../components/CardTotal";
 import ProductCard from "../components/ProductCard/ProductCard";
